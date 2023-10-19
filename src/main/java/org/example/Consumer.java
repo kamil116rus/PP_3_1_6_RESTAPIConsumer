@@ -54,7 +54,7 @@ public class Consumer {
         HttpHeaders headers = new HttpHeaders();
         headers.set("Cookie", header);
         headers.setContentType(MediaType.APPLICATION_JSON);
-        String ssss = "{\"id\":3,\"name\":\"Thomas\",\"lastName\":\" Shelby\",\"age\":55}";
+        String ssss = "{\"id\":3,\"name\":\"Thomas\",\"lastName\":\"Shelby\",\"age\":55}";
         HttpEntity<String> requestEntity = new HttpEntity<>(ssss, headers);
         ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.PUT, requestEntity, String.class);
 

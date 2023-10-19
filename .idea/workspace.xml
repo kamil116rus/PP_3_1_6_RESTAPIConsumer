@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24467a3d-a2a4-4ef4-832c-8132ce84c2dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Consumer.java" afterDir="false" />
-    </list>
+    <list default="true" id="24467a3d-a2a4-4ef4-832c-8132ce84c2dd" name="Changes" comment="restconsumer" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,12 +73,33 @@
       <updated>1696275928689</updated>
       <workItem from="1696275929804" duration="8000" />
       <workItem from="1697123639162" duration="2324000" />
-      <workItem from="1697735367589" duration="8828000" />
+      <workItem from="1697735367589" duration="9143000" />
     </task>
+    <task id="LOCAL-00001" summary="restconsumer">
+      <option name="closed" value="true" />
+      <created>1697744765310</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697744765310</updated>
+    </task>
+    <task id="LOCAL-00002" summary="restconsumer">
+      <option name="closed" value="true" />
+      <created>1697744796750</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697744796750</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="restconsumer" />
+    <option name="LAST_COMMIT_MESSAGE" value="restconsumer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
