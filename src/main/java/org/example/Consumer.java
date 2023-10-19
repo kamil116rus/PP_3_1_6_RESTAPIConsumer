@@ -25,11 +25,7 @@ public class Consumer {
 
         String header = responseEntity.getHeaders().getFirst("Set-Cookie");
 
-
-
         System.out.println("Code = " + postUser(url, header) + puttUser(url, header) + deleteUser(url, header, 3L));
-
-
     }
 
     public static String postUser(String url, String header) {
@@ -37,12 +33,12 @@ public class Consumer {
         HttpHeaders headers = new HttpHeaders();
         headers.set("Cookie", header);
         headers.setContentType(MediaType.APPLICATION_JSON);
+
         String ssss = "{\"id\":3,\"name\":\"James\",\"lastName\":\"Brown\",\"age\":21}";
         HttpEntity<String> requestEntity = new HttpEntity<>(ssss, headers);
         ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.POST, requestEntity, String.class);
 
         return responseEntity.getBody();
-
     }
 
     public static String puttUser(String url, String header) {
@@ -50,6 +46,7 @@ public class Consumer {
         HttpHeaders headers = new HttpHeaders();
         headers.set("Cookie", header);
         headers.setContentType(MediaType.APPLICATION_JSON);
+
         String ssss = "{\"id\":3,\"name\":\"Thomas\",\"lastName\":\"Shelby\",\"age\":55}";
         HttpEntity<String> requestEntity = new HttpEntity<>(ssss, headers);
         ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.PUT, requestEntity, String.class);
@@ -62,8 +59,8 @@ public class Consumer {
         HttpHeaders headers = new HttpHeaders();
         headers.set("Cookie", header);
         headers.setContentType(MediaType.APPLICATION_JSON);
-        //String ssss = "{\"id\":3,\"name\":\"Thomas\",\"lastName\":\" Shelby\",\"age\":55}";
         HttpEntity<String> requestEntity = new HttpEntity<>(headers);
+
         ResponseEntity<String> responseEntity = restTemplate.exchange(url + "/" + id, HttpMethod.DELETE, requestEntity, String.class);
 
         return responseEntity.getBody();
