@@ -3,8 +3,7 @@ package org.example;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.HashMap;
-import java.util.Map;
+
 
 public class Consumer {
     public static void main(String[] args) {
@@ -16,7 +15,7 @@ public class Consumer {
         // Создание объекта HttpHeaders и добавление заголовков
         HttpHeaders headers = new HttpHeaders();
 
-         // Создание объекта HttpEntity с заголовками
+        // Создание объекта HttpEntity с заголовками
         HttpEntity<String> requestEntity = new HttpEntity<>(headers);
 
         // Выполнение запроса с использованием метода exchange()
@@ -28,10 +27,7 @@ public class Consumer {
 
 
 
-//        System.out.println(postUser(url, header));
-//        System.out.println(puttUser(url, header));
-//        System.out.println(deleteUser(url, header, 3L));
-        System.out.println("Code = " + postUser(url, header) + puttUser(url, header) + deleteUser(url, header, 3L) );
+        System.out.println("Code = " + postUser(url, header) + puttUser(url, header) + deleteUser(url, header, 3L));
 
 
     }
